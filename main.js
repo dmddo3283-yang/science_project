@@ -18,7 +18,7 @@ function renderInputView() {
           <div class="form-group">
             <label>질량 (kg)</label>
             <div class="input-wrapper">
-              <input type="number" id="mass-input" value="${state.mass}" required />
+              <input type="number" id="mass-input" value="${state.mass}" min="1" max="1000" required />
               <span class="unit">kg</span>
             </div>
           </div>
@@ -26,7 +26,7 @@ function renderInputView() {
           <div class="form-group">
             <label>초기 높이 (m)</label>
             <div class="input-wrapper">
-              <input type="number" id="height-input" value="${state.height}" required />
+              <input type="number" id="height-input" value="${state.height}" min="1" max="1000" required />
               <span class="unit">m</span>
             </div>
           </div>
