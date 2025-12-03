@@ -163,6 +163,11 @@ function render() {
         document.getElementById('mass-input').value = 1;
       }
 
+      if (heightValue > 1000) {
+        heightValue = 1000;
+        document.getElementById('height-input').value = 1000;
+      }
+
       if (heightValue < 1) {
         heightValue = 1;
         document.getElementById('height-input').value = 1;
